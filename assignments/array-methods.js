@@ -78,8 +78,10 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-//How many runners are working for Gabtype?
-
+//What companies participated?
+let gabRunners = []
+runners.filter(elem => elem.company_name).forEach(elem => gabRunners.push(elem.company_name))
+console.log(gabRunners)
 
 // Problem 2
 //Who donated more than $100 to receive a free t-shirt
